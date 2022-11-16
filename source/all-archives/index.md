@@ -2,4 +2,5 @@
 title: "all-archives"
 layout: "all-archives"
 comments: false
+sitemap: false
 ---
