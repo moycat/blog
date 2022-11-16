@@ -28,8 +28,8 @@ jobs:
           key: pnpm-store-${{ hashFiles('pnpm-lock.yaml') }}
           restore-keys: |
             pnpm-store-
-      - run: pnpm install
-      - run: npm run build
+      - run: cd themes/tranquilpeak && pnpm install && npm run prod
+      - run: pnpm install && npm run build
       - uses: actions/upload-artifact@v3
         with:
           name: blog
@@ -54,7 +54,7 @@ jobs:
           path: ~/.npm
           key: npm-cache
       - run: npm install -g netlify-cli
-      - run: netlify deploy --dir=public
+      - run: netlify deploy --dir=public --prod
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
