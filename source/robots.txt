@@ -1,0 +1,55 @@
+Sitemap: https://blog.moy.cat/sitemap.xml
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: Baiduspider-image
+Disallow: /
+
+User-agent: YoudaoBot
+Disallow: /
+
+User-agent: Sogou web spider
+Disallow: /
+
+User-agent: Sogou inst spider
+Disallow: /
+
+User-agent: Sogou spider2
+Disallow: /
+
+User-agent: Sogou blog
+Disallow: /
+
+User-agent: Sogou News Spider
+Disallow: /
+
+User-agent: Sogou Orion spider
+Disallow: /
+
+User-agent: ChinasoSpider
+Disallow: /
+
+User-agent: Sosospider
+Disallow: /
+
+User-agent: yisouspider
+Disallow: /
+
+User-agent: EasouSpider
+Disallow: /
+
+User-agent: YYspider
+Disallow: /
+
+User-agent: ToutiaoSpider
+Disallow: /
+
+User-agent: 360Spider
+Disallow: /
+
+User-agent: HaosouSpider
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
