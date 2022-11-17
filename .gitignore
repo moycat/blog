@@ -1,5 +1,6 @@
 .DS_Store
 .idea/
+.netlify/
 Thumbs.db
 db.json
 *.log
