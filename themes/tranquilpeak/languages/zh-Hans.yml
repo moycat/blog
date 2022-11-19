@@ -41,6 +41,8 @@ global:
     open_link: "跳转至"
     open_post: "访问"
 
+date:
+    month: "%d 月"
 
 pagination:
     page: "第 %d 页"
