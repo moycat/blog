@@ -34,11 +34,10 @@ h3,
 h4,
 h5,
 h6 {
-    letter-spacing: -0.04em;
-    font-family:    map-get($font-families, 'headings');
-    font-weight:    700;
-    line-height:    1.45em;
-    color:          #2c3e50;
+    font-family: map-get($font-families, 'headings');
+    font-weight: 700;
+    line-height: 1.45em;
+    color:       #34495e;
 }
 
 h1,

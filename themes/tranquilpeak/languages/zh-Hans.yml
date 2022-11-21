@@ -10,6 +10,7 @@ global:
     archives: "归档"
     search: "搜索"
     about: "关于"
+    friends: "友链"
     author_picture: "头像"
     github: "GitHub"
     twitter: "Twitter"
