@@ -36,7 +36,6 @@ global:
         zero: "没有找到标签"
         one: "找到 1 个标签"
         other: "找到 {n} 个标签"
-    read_more_about_author: "关于作者"
     zoom_in_on_picture: "放大图片"
     go_to_homepage: "去首页"
     open_link: "跳转至"
