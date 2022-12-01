@@ -56,10 +56,13 @@ post:
     no_title : "无标题"
     categorized_in: "发布于"
     tagged_in: "标签"
+    back_to_top: "返回顶部"
     toc: "目录"
     read_more: "阅读全文"
     go_to_website: "转到"
     comment_and_share: "评论 / 分享"
+    comment: "评论"
+    share: "分享"
     gallery: "画廊"
     image:
         one: "一张图片"
