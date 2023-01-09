@@ -10,6 +10,7 @@
         data-message-zero="<%= __('global.posts_found.zero') %>"
         data-message-one="<%= __('global.posts_found.one') %>"
         data-message-other="<%= __('global.posts_found.other') %>"></h5>
+    <section class="boxes"><div><a href="/all-categories/">➡️ 按分类排序</a></div></section>
     <section class="boxes">
         <% site.posts.sort('date', 'desc').each(function(post) { %>
             <% var currentYear = post.date.year(); %>

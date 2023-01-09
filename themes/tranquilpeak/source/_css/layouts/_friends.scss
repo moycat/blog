@@ -1,0 +1,48 @@
+#friends {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .friend {
+    margin: 0.5em 2em;
+    p {
+      text-align: center;
+    }
+    a {
+      text-decoration: none;
+      color: map-get($colors, 'base');
+      &:hover {
+        color: lighten(map-get($colors, 'base'), 20%);
+      }
+    }
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 48px;
+      filter: drop-shadow(4px 8px 8px rgba(0, 0, 0, 0.2));
+      transition: all 300ms ease-out;
+      &:hover {
+        transform: translate(0, -0.25rem);
+        transition: all 300ms ease-in;
+      }
+    }
+  }
+  #banner {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media #{$medium-and-up} {
+  #friends {
+    margin-top: 2em;
+  }
+}
+
+@media #{$small-and-down} {
+  #friends {
+    margin-top: 0;
+    .friend {
+      margin: 0.5em 1.5em;
+    }
+  }
+}

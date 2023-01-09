@@ -1,0 +1,14 @@
+<div class="main-content-wrap">
+    <div id="friends">
+        <h1 id="banner">Where will your journey take you, traveler?</h1>
+        <% for (var i in theme.friends) { %>
+            <div class="friend">
+                <% var friend = theme.friends[i] %>
+                <a href="<%- friend.link %>" target="_blank" title="<%= friend.name %>">
+                    <img class="avatar" src="<%- url_for('/assets/images/friends/' + friend.picture) %>" alt="<%= friend.author %>">
+                </a>
+                <p><a href="<%- friend.link %>" target="_blank" title="<%= friend.bio %>"><%= friend.author %></a></p>
+            </div>
+        <% } %>
+    </div>
+</div>

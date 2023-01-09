@@ -23,8 +23,13 @@
         margin-bottom: 15px;
 
         .sidebar-profile-picture {
-            display: block;
-            margin:  0 auto;
+            display:    block;
+            margin:     0 auto;
+            transition: all 300ms ease-out;
+            &:hover {
+                transform: translate(0, -0.4rem);
+                transition: all 300ms ease-in;
+            }
         }
         .sidebar-profile-name {
             font-size:      2.4em;

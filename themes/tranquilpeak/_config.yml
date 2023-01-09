@@ -34,10 +34,6 @@ sidebar:
             title: global.home
             url: /
             icon: fa fa-home
-        categories:
-            title: global.categories
-            url: /all-categories
-            icon: fa fa-bookmark
         archives:
             title: global.archives
             url: /all-archives
@@ -48,6 +44,10 @@ sidebar:
             icon: fa fa-search
             # `open-algolia-search` classes are used to open algolia search modal
             class: open-algolia-search
+        friends:
+            title: global.friends
+            url: /friends
+            icon: fa fa-user-friends
         about:
             title: global.about
             url: "#about"
@@ -264,3 +264,60 @@ sharing_options:
     telegram:
         icon: "fa fa-paper-plane"
         url: "https://t.me/share/url?url={{post.permalink}}&text=%E3%80%8A{{post.title}}%E3%80%8BMoycat"
+
+friends:
+    - name: 色魔是色魔
+      author: Semesse
+      picture: semesse.png
+      link: https://sem.ms/
+      bio: Abundat et pulchrum mundus est
+    - name: 鲸喵
+      author: VaalaCat
+      picture: vaalacat.png
+      link: https://vaala.cat/
+      bio: A Lucky and Strange Cat!
+    - name: 废文池
+      author: 椎名晴樹
+      picture: haor233.webp
+      link: https://haor233.com/
+      bio:
+    - name: 所以事情就是这样
+      author: Xyct
+      picture: xyct.jpg
+      link: https://t.me/xyctchannel
+      bio:
+    - name: 浅云的博客
+      author: Yorling
+      picture: yorling.jpg
+      link: https://blog.shallowcloud.com/
+      bio: 分享一些奇怪的东西
+    - name: Zry.IO
+      author: zry98
+      picture: zry98.jpg
+      link: https://zry.io/
+      bio: Stay Curious
+    - name: Etenal
+      author: Etenal
+      picture: etenal.jpg
+      link: https://etenal.me/
+      bio:
+    - name: CYRUS BLOG
+      author: Cyrus
+      picture: cyrus.jpg
+      link: https://blog.cyru1s.com/
+      bio: FLAG{S0_H4PPY_C_U_H3R3} (>.<)
+    - name: Kyr1os' Blog
+      author: Kyr1os
+      picture: kyr1os.png
+      link: https://blog.kyrios.cn/
+      bio: Each day is a blessing
+    - name: evi0s' Blog
+      author: evi0s
+      picture: evi0s.jpg
+      link: https://evi0s.com/
+      bio: path of heart & passion for code
+    - name: 克莉丝随笔
+      author: Xris
+      picture: xris.jpg
+      link: https://xr1s.me/
+      bio: Tell little about myself
