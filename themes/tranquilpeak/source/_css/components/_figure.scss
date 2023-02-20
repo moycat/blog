@@ -54,6 +54,11 @@
     }
 }
 
+p + .figure-margin {
+    display: block;
+    margin-top: 1.6em;
+}
+
 // Hide caption of small pictures on small screen
 @media #{$small-and-down} {
     .fig-33, .fig-25, .fig-20 {

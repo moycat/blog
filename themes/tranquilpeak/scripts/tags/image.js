@@ -47,7 +47,7 @@
     var thumbnailWidth = '';
     var thumbnailHeight = '';
     var classes = [];
-    var html = '';
+    var html = '<span class="figure-margin"></span>';
     var fancybox = '';
     var clear = '';
     var group = 'default';
