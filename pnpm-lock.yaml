@@ -11,9 +11,9 @@ specifiers:
   hexo-generator-tag: ^2.0.0
   hexo-renderer-ejs: ^2.0.0
   hexo-renderer-marked: ^6.0.0
-  hexo-renderer-stylus: ^2.1.0
+  hexo-renderer-stylus: ^3.0.0
   hexo-server: ^3.0.0
-  hexo-theme-landscape: ^0.0.3
+  hexo-theme-landscape: ^1.0.0
 
 dependencies:
   hexo: 6.3.0
@@ -26,11 +26,15 @@ dependencies:
   hexo-generator-tag: 2.0.0
   hexo-renderer-ejs: 2.0.0
   hexo-renderer-marked: 6.0.0
-  hexo-renderer-stylus: 2.1.0
+  hexo-renderer-stylus: 3.0.0
   hexo-server: 3.0.0
-  hexo-theme-landscape: 0.0.3
+  hexo-theme-landscape: 1.0.0
 
 packages:
+
+  /@adobe/css-tools/4.2.0:
+    resolution: {integrity: sha512-E09FiIft46CmH5Qnjb0wsW54/YQd69LsxeKUOWawmws1XWvyFGURnAChH0mlr7YPFR1ofwvUQfcL0J3lMxXqPA==}
+    dev: false
 
   /@algolia/cache-browser-local-storage/4.4.0:
     resolution: {integrity: sha512-2AiKgN7DpFypkRCRkpqH7waXXyFdcnsPWzmN8sLHrB/FfXqgmsQb3pGft+9YHZIDQ0vAnfgMxSGgMhMGW+0Qnw==}
@@ -233,12 +237,6 @@ packages:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
     dev: false
 
-  /atob/2.1.2:
-    resolution: {integrity: sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==}
-    engines: {node: '>= 4.5.0'}
-    hasBin: true
-    dev: false
-
   /balanced-match/1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
     dev: false
@@ -388,14 +386,6 @@ packages:
       which: 2.0.2
     dev: false
 
-  /css/3.0.0:
-    resolution: {integrity: sha512-DG9pFfwOrzc+hawpmqX/dHYHJG+Bsdb0klhyi1sDneOgGOXy9wQIC8hzyVp1e4NRYDBdxcylvywPkkXCHAzTyQ==}
-    dependencies:
-      inherits: 2.0.4
-      source-map: 0.6.1
-      source-map-resolve: 0.6.0
-    dev: false
-
   /cssom/0.3.8:
     resolution: {integrity: sha512-b0tGHbfegbhPJpxpiBPU2sCkigAqtM9O121le6bbOlgyV+NyGyCmVfJ6QW9eRjz8CpNfWEOYBIMIGRYkLwsIYg==}
     dev: false
@@ -449,11 +439,6 @@ packages:
 
   /decimal.js/10.4.2:
     resolution: {integrity: sha512-ic1yEvwT6GuvaYwBLLY6/aFFgjZdySKTE8en/fkU3QICTmRtgtSlFn0u0BXN06InZwtfCelR7j8LRiDI/02iGA==}
-    dev: false
-
-  /decode-uri-component/0.2.0:
-    resolution: {integrity: sha512-hjf+xovcEn31w/EUYdTXQh/8smFL/dzYjohQGEIgjyNavaJfBY2p5F527Bo1VPATxv0VYTUC2bOcXvqFwk78Og==}
-    engines: {node: '>=0.10'}
     dev: false
 
   /deep-is/0.1.4:
@@ -831,12 +816,12 @@ packages:
       - utf-8-validate
     dev: false
 
-  /hexo-renderer-stylus/2.1.0:
-    resolution: {integrity: sha512-Nef4YCr7JX8jaRaByhzXMSsWnDed+RgJj6aU/ARnYu3Bn5xz/qRz52VJG7KqD0Xuysxa9TIBdVUgNzBrSFn3DQ==}
-    engines: {node: '>=12.13.0'}
+  /hexo-renderer-stylus/3.0.0:
+    resolution: {integrity: sha512-wgKOcjUzq1i4Y70luoyYDbh91QeQcDzJO+v1598LgY+IdREFAm+vy1MWtl/TZsVXyPaEtsULNi3Vi22hdsPUSA==}
+    engines: {node: '>=14'}
     dependencies:
-      nib: 1.2.0_stylus@0.57.0
-      stylus: 0.57.0
+      nib: 1.2.0_stylus@0.59.0
+      stylus: 0.59.0
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -857,8 +842,8 @@ packages:
       - supports-color
     dev: false
 
-  /hexo-theme-landscape/0.0.3:
-    resolution: {integrity: sha512-b0Di+TUVs4ESrNX4ULEh9uQmADpO6kr10rIJ2OGZM8suNQNFKdxn+vJUjnLfKkCPJAfVmS7/S83KCNYe4tpoNw==}
+  /hexo-theme-landscape/1.0.0:
+    resolution: {integrity: sha512-bWQJWMqQI78wWiJPQZq5pJBH20TM442ShCaHGRetuEgMraxH0OKxB3NTupJzNEkzEk8DV2yrdizkXdKN6i501A==}
     dev: false
 
   /hexo-util/2.7.0:
@@ -1230,12 +1215,12 @@ packages:
     engines: {node: '>= 0.6'}
     dev: false
 
-  /nib/1.2.0_stylus@0.57.0:
+  /nib/1.2.0_stylus@0.59.0:
     resolution: {integrity: sha512-7HgrnMl/3yOmWykueO8/D0q+0iWwe7Z+CK2Eaq/xQV8w1hK80WN1oReRQkfkrztbAAnp/nTHkUSl5EcVkor6JQ==}
     peerDependencies:
       stylus: '*'
     dependencies:
-      stylus: 0.57.0
+      stylus: 0.59.0
     dev: false
 
   /no-case/3.0.4:
@@ -1494,18 +1479,11 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
-  /source-map-resolve/0.6.0:
-    resolution: {integrity: sha512-KXBr9d/fO/bWo97NXsPIAW1bFSBOuCnjbNTBMO7N59hsv5i9yzRDfcYwwt0l04+VqnKC+EwzvJZIP/qkuMgR/w==}
-    deprecated: See https://github.com/lydell/source-map-resolve#deprecated
-    dependencies:
-      atob: 2.1.2
-      decode-uri-component: 0.2.0
-    dev: false
-
   /source-map/0.6.1:
     resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==}
     engines: {node: '>=0.10.0'}
     dev: false
+    optional: true
 
   /source-map/0.7.4:
     resolution: {integrity: sha512-l3BikUxvPOcn5E74dZiq5BGsTb5yEwhaTSzccU6t4sDOH8NWJCstKO5QT2CvtFoK6F0saL7p9xHAqHOlCPJygA==}
@@ -1550,14 +1528,13 @@ packages:
     resolution: {integrity: sha512-3HVl+cOkJOlNUDAYdoCAfGx/fzUzG53YvJAl3RYlTvAcBdPqSp1Uv4wrmHymm7oEypTijSQqcqplW8cz0/r/YA==}
     dev: false
 
-  /stylus/0.57.0:
-    resolution: {integrity: sha512-yOI6G8WYfr0q8v8rRvE91wbxFU+rJPo760Va4MF6K0I6BZjO4r+xSynkvyPBP9tV1CIEUeRsiidjIs2rzb1CnQ==}
+  /stylus/0.59.0:
+    resolution: {integrity: sha512-lQ9w/XIOH5ZHVNuNbWW8D822r+/wBSO/d6XvtyHLF7LW4KaCIDeVbvn5DF8fGCJAUCwVhVi/h6J0NUcnylUEjg==}
     hasBin: true
     dependencies:
-      css: 3.0.0
+      '@adobe/css-tools': 4.2.0
       debug: 4.3.4
       glob: 7.2.3
-      safer-buffer: 2.1.2
       sax: 1.2.4
       source-map: 0.7.4
     transitivePeerDependencies:
