@@ -48,7 +48,7 @@ jobs:
         env:
           ALGOLIA_ADMIN_API_KEY: ${{ secrets.ALGOLIA_ADMIN_API_KEY }}
   publish:
-    name: Publish to Netlify
+    name: Publish to Cloudflare
     runs-on: ubuntu-latest
     needs: build
     if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/master') || inputs.publish != 'no' }}
@@ -57,23 +57,9 @@ jobs:
         with:
           name: blog
           path: public
-      - uses: actions/setup-node@v3
+      - uses: cloudflare/pages-action@v1
         with:
-          node-version: 16
-      - uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: npm-cache
-      - run: npm install -g netlify-cli
-      - name: Publish online
-        if: ${{ inputs.publish != 'preview' }}
-        run: netlify deploy --dir=public --prod
-        env:
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-      - name: Publish preview
-        if: ${{ inputs.publish == 'preview' }}
-        run: netlify deploy --dir=public
-        env:
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: moycat-blog
+          directory: public
