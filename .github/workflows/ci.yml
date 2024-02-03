@@ -25,7 +25,7 @@ jobs:
           node-version: 16
       - uses: pnpm/action-setup@v2
         with:
-          version: 7
+          version: 8
           run_install: false
       - id: pnpm-cache
         shell: bash
@@ -33,9 +33,9 @@ jobs:
       - uses: actions/cache@v3
         with:
           path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
-          key: pnpm-store-${{ hashFiles('pnpm-lock.yaml') }}
+          key: pnpm-store-v2-${{ hashFiles('pnpm-lock.yaml') }}
           restore-keys: |
-            pnpm-store-
+            pnpm-store-v2-
       - run: cd themes/tranquilpeak && pnpm install && npm run prod
       - run: pnpm install && npm run build
       - uses: actions/upload-artifact@v3
@@ -44,7 +44,7 @@ jobs:
           path: public
       - name: Index at Algolia
         if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/master') || inputs.publish == 'online' }}
-        run: pnpm install && npm run index
+        run: npm run index
         env:
           ALGOLIA_ADMIN_API_KEY: ${{ secrets.ALGOLIA_ADMIN_API_KEY }}
   publish:
