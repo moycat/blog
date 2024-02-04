@@ -6,12 +6,11 @@ on:
       publish:
         description: 'Publish build output'
         required: true
-        default: 'preview'
+        default: 'no'
         type: choice
         options:
           - no
-          - preview
-          - online
+          - yes
 jobs:
   build:
     name: Build Blog
@@ -51,7 +50,7 @@ jobs:
     name: Publish to Cloudflare
     runs-on: ubuntu-latest
     needs: build
-    if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/master') || inputs.publish != 'no' }}
+    if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/master') || inputs.publish == 'yes' }}
     steps:
       - uses: actions/download-artifact@v3
         with:
