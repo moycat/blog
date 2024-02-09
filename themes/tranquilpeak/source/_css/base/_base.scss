@@ -168,6 +168,10 @@ blockquote {
     }
 }
 
+input {
+    font-family: $font-family-base;
+}
+
 // Reduce global font-size base and headings font size on small screen and down
 @media #{$small-and-down} {
     code {
