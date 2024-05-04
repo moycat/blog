@@ -286,6 +286,11 @@ friends:
       picture: xyct.jpg
       link: https://t.me/xyctchannel
       bio:
+    - name: Naive Cat
+      author: naivecat
+      picture: naivecat.png
+      link: https://naive.cat/
+      bio:
     - name: 浅云的博客
       author: Yorling
       picture: yorling.jpg
@@ -331,11 +336,6 @@ friends:
       picture: damaoooo.png
       link: https://damaoooo.github.io/
       bio:
-    - name: 二喵的小窝
-      author: DoubleCat
-      picture: doublecat.png
-      link: https://blog.doublecat.cn/
-      bio: 夏日已至，静听蝉鸣
     - name: Anitya‘s BLOG
       author: 无常 Anitya
       picture: anitya.jpg
