@@ -13,7 +13,7 @@
     "version": "6.3.0"
   },
   "dependencies": {
-    "hexo": "^6.3.0",
+    "hexo": "^7.3.0",
     "hexo-algoliasearch": "^1.1.0",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
