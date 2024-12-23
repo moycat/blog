@@ -44,9 +44,7 @@
         }
         :not(blockquote):not(li):not(.alert) {
             & > p {
-                margin:       1.6em 0 0 0;
-                text-align:   justify;
-                text-justify: inter-character;
+                margin: 1.6em 0 0 0;
             }
         }
         li {
