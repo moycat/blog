@@ -41,11 +41,11 @@ jobs:
         with:
           name: blog
           path: public
-      - name: Index at Algolia
-        if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/master') || inputs.publish == 'online' }}
-        run: npm run index
-        env:
-          ALGOLIA_ADMIN_API_KEY: ${{ secrets.ALGOLIA_ADMIN_API_KEY }}
+#      - name: Index at Algolia
+#        if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/master') || inputs.publish == 'online' }}
+#        run: npm run index
+#        env:
+#          ALGOLIA_ADMIN_API_KEY: ${{ secrets.ALGOLIA_ADMIN_API_KEY }}
   publish:
     name: Publish to Cloudflare
     runs-on: ubuntu-latest
