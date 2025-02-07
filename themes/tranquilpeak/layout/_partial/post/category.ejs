@@ -1,6 +1,7 @@
 <% if ((categories) && (categories.length > 0)) { %>
     <%- list_categories(categories, {
         show_count: 0,
-        style: 'none'
+        style: 'none',
+        separator: '、'
     }) %>
 <% } %>
