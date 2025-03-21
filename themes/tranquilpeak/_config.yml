@@ -103,13 +103,13 @@ header:
 # Your biography and your job is editable in each languages files in `languages` folder
 author:
     email: i@moy.cat
-    location: Riverside, CA
+    location: Bellevue, WA
     bio: |
         <p>这里是 Moycat 👋<br>
         信仰存在主义与不可知论<br>
         在广袤而浅薄的土地上一路驰骋</p>
         <p>☀ · 🌈 · 🐱 · 🐳 · 🍥</p>
-    job: UC Riverside
+    job: ByteDance
     # Your profile picture located in folder `source/_images/` (development)
     # or in `source/assets/images/` (production)
     # or you can use an external url
