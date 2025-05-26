@@ -44,13 +44,16 @@
         }
         :not(blockquote):not(li):not(.alert) {
             & > p {
-                margin: 1.6em 0 0 0;
+                margin: 1em 0 0 0;
             }
         }
         li {
             p {
                 margin: 0 0 0 0;
             }
+        }
+        strong {
+            font-weight: 600;
         }
     }
     .post-footer {
@@ -88,6 +91,6 @@
 // Increase font-size on medium and large screen
 @media #{$medium-and-up} {
     .post-content {
-        font-size: 1.7rem;
+        font-size: $font-size-base + 0.05rem;
     }
 }
