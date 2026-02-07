@@ -276,11 +276,6 @@ friends:
       picture: vaalacat.png
       link: https://vaala.cat/
       bio: A Lucky and Strange Cat!
-    - name: 废文池
-      author: 椎名晴樹
-      picture: haor233.webp
-      link: https://haor233.com/
-      bio:
     - name: 所以事情就是这样
       author: Xyct
       picture: xyct.jpg
@@ -316,11 +311,6 @@ friends:
       picture: kyr1os.png
       link: https://blog.kyrios.cn/
       bio: Each day is a blessing
-    - name: evi0s' Blog
-      author: evi0s
-      picture: evi0s.jpg
-      link: https://evi0s.com/
-      bio: path of heart & passion for code
     - name: 克莉丝随笔
       author: Xris
       picture: xris.jpg
@@ -336,6 +326,11 @@ friends:
       picture: damaoooo.png
       link: https://damaoooo.github.io/
       bio:
+    - name: GZTime's Blog
+      author: GZTime
+      picture: gztime.png
+      link: https://blog.gzti.me/
+      bio: Walking on the Time Axis.
     - name: Anitya‘s BLOG
       author: 无常 Anitya
       picture: anitya.jpg
@@ -346,4 +341,15 @@ friends:
       picture: doublecat.jpg
       link: https://blog.doublecat.top
       bio: 前尘隔海 古屋不再 听听那冷雨
+deceased_friends:
+  - name: 废文池
+    author: 椎名晴樹
+    picture: haor233.webp
+    link: https://haor233.com/
+    bio:
+  - name: evi0s' Blog
+    author: evi0s
+    picture: evi0s.jpg
+    link: https://evi0s.com/
+    bio: path of heart & passion for code
 
