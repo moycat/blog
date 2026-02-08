@@ -29,9 +29,13 @@
       }
     }
   }
-  #banner {
+  .banner {
     width: 100%;
     text-align: center;
+  }
+  .secondary {
+    font-size: 75%;
+    opacity: 75%;
   }
 }
 

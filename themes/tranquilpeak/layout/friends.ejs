@@ -1,6 +1,6 @@
 <div class="main-content-wrap">
     <div id="friends">
-        <h1 id="banner">Where will your journey take you, traveler?</h1>
+        <h1 class="banner">旅行者，你将去往何方？</h1>
         <% for (var i in theme.friends) { %>
             <div class="friend">
                 <% var friend = theme.friends[i] %>
@@ -10,7 +10,7 @@
                 <p><a href="<%- friend.link %>" target="_blank" title="<%= friend.bio %>"><%= friend.author %></a></p>
             </div>
         <% } %>
-        <h1 id="banner">In memory of... (their websites)</h1>
+        <h1 class="banner">我们怀念他们<span class="secondary">（的网站）</span></h1>
         <% for (var i in theme.deceased_friends) { %>
             <div class="friend">
                 <% var friend = theme.deceased_friends[i] %>
