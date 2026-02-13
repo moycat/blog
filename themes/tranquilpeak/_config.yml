@@ -266,6 +266,11 @@ sharing_options:
         url: "https://t.me/share/url?url={{post.permalink}}&text=%E3%80%8A{{post.title}}%E3%80%8BMoycat"
 
 friends:
+    - name: A Donut Hole
+      author: Alex zzZ
+      picture: alex.jpg
+      link: https://t.me/adonuthole
+      bio:
     - name: 色魔是色魔
       author: Semesse
       picture: semesse.png
@@ -286,6 +291,21 @@ friends:
       picture: naivecat.png
       link: https://naive.cat/
       bio:
+    - name: Frank
+      author: Frank Wu
+      picture: frank.jpg
+      link: https://frankoverflow.com/
+      bio: Frank工厂
+    - name: xia0o0o0o
+      author: xia0o0o0o
+      picture: xia0.jpg
+      link: https://xia0.sh/
+      bio:
+    - name: GZTime's Blog
+      author: GZTime
+      picture: gztime.png
+      link: https://blog.gzti.me/
+      bio: Walking on the Time Axis.
     - name: 浅云的博客
       author: Yorling
       picture: yorling.jpg
@@ -326,11 +346,6 @@ friends:
       picture: damaoooo.png
       link: https://damaoooo.github.io/
       bio:
-    - name: GZTime's Blog
-      author: GZTime
-      picture: gztime.png
-      link: https://blog.gzti.me/
-      bio: Walking on the Time Axis.
     - name: Anitya‘s BLOG
       author: 无常 Anitya
       picture: anitya.jpg
