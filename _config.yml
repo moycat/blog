@@ -108,21 +108,6 @@ theme: tranquilpeak
 deploy:
   type: ''
 
-algolia:
-  appId: "RYRPBOM2FI"
-  apiKey: "4f78acce37588e354f19140749848f4a"
-  chunkSize: 5000
-  indexName: "moycat-blog"
-  fields:
-    - content:strip
-    - excerpt:strip
-    - gallery
-    - permalink
-    - photos
-    - slug
-    - tags
-    - date
-    - title
 
 feed:
   # Generate both atom and rss2 feeds

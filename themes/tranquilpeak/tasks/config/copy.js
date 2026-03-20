@@ -73,14 +73,6 @@ module.exports = function(grunt) {
         {
           src: gitalkPath + '/dist/gitalk.css',
           dest: cssDestFolder + 'gitalk.css'
-        },
-        {
-          src: './node_modules/moment/min/moment-with-locales.js',
-          dest: jsDestFolder + 'moment-with-locales.js'
-        },
-        {
-          src: './node_modules/algoliasearch/dist/algoliasearch.umd.js',
-          dest: jsDestFolder + 'algoliasearch.js'
         }
       ]
     }

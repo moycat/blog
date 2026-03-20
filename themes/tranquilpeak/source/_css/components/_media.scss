@@ -9,15 +9,19 @@
         padding-right: 15px;
     }
     &-body {
-        width: 100%;
+        width:   100%;
+        padding: 0.5em 0.6em;
     }
     &-heading {
-        margin: 0 0 -5px;
+        margin: 0 0 3px;
     }
     &-meta {
         color: map-get($colors, 'light');
     }
     &-content {
         color: map-get($colors, 'base');
+        p {
+            margin: 0.5em 0 0 0;
+        };
     }
 }

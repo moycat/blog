@@ -1,8 +1,7 @@
 {
     "globals": {
         "jQuery": false,
-        "moment": false,
-        "algoliaIndex": false
+        "searchApiBaseUrl": false
     },
     "env": {
         "browser": true

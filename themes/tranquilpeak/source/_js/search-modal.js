@@ -2,19 +2,19 @@
   'use strict';
 
   /**
-   * Search modal with Algolia
+   * Search modal with custom index API
    * @constructor
    */
   var SearchModal = function() {
-    this.$openButton = $('.open-algolia-search');
-    this.$searchModal = $('#algolia-search-modal');
+    this.$openButton = $('.open-search-modal');
+    this.$searchModal = $('#open-search-modal');
     this.$closeButton = this.$searchModal.find('.close-button');
-    this.$searchForm = $('#algolia-search-form');
-    this.$searchInput = $('#algolia-search-input');
+    this.$searchForm = $('#open-search-form');
+    this.$searchInput = $('#open-search-input');
     this.$results = this.$searchModal.find('.results');
     this.$noResults = this.$searchModal.find('.no-result');
     this.$resultsCount = this.$searchModal.find('.results-count');
-    this.algolia = algoliaIndex;
+    this.apiBaseUrl = (window.searchApiBaseUrl || 'https://index.moy.cat').replace(/\/$/, '');
   };
 
   SearchModal.prototype = {
@@ -68,6 +68,15 @@
         event.preventDefault();
         self.search(self.$searchInput.val());
       });
+
+      // send search when input value changes (debounced)
+      self.searchDebounced = self.debounce(function() {
+        self.search(self.$searchInput.val());
+      }, 250);
+
+      self.$searchInput.on('input', function() {
+        self.searchDebounced();
+      });
     },
 
     /**
@@ -90,17 +99,34 @@
       this.$searchInput.blur();
     },
 
-    /**
-     * Search with Algolia API and display results
-     * @param {String} search
-     * @returns {void}
-     */
     search: function(search) {
       var self = this;
-      this.algolia.search(search).then(function(content) {
-        self.showResults(content.hits);
-        self.showResultsCount(content.nbHits);
-      });
+      var query = (search || '').trim();
+
+      if (!query) {
+        self.showResults([]);
+        self.showResultsCount(0);
+        return;
+      }
+
+      fetch(this.apiBaseUrl + '/v1/search?q=' + encodeURIComponent(query))
+        .then(function(response) {
+          return response.json().then(function(payload) {
+            if (!response.ok) {
+              throw new Error((payload && payload.error && payload.error.message) || 'search request failed');
+            }
+            return payload;
+          });
+        })
+        .then(function(payload) {
+          var hits = Array.isArray(payload && payload.hits) ? payload.hits : [];
+          self.showResults(hits);
+          self.showResultsCount(hits.length);
+        })
+        .catch(function() {
+          self.showResults([]);
+          self.showResultsCount(0);
+        });
     },
 
     /**
@@ -111,12 +137,32 @@
     showResults: function(posts) {
       var html = '';
       posts.forEach(function(post) {
-        var lang = window.navigator.userLanguage || window.navigator.language || post.lang;
+        var postUrl = post.url || post.link || post.permalink || '#';
+        var snippet = post.snippet || post.excerpt || post.excerptStrip || '';
+        var escapedSnippet = String(snippet)
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/\"/g, '&quot;')
+          .replace(/'/g, '&#39;')
+          .replace(/\r\n?|\n/g, '\n');
+        var paragraphSnippet = escapedSnippet
+          .split('\n')
+          .map(function(line) {
+            return line.trim();
+          })
+          .filter(function(line) {
+            return line.length > 0;
+          })
+          .map(function(line) {
+            return '<p>' + line + '</p>';
+          })
+          .join('');
 
         html += '<div class="media">';
         if (post.thumbnailImageUrl) {
           html += '<div class="media-left">';
-          html += '<a class="link-unstyled" href="' + (post.link || post.permalink) + '">';
+          html += '<a class="link-unstyled" href="' + postUrl + '">';
           html += '<img class="media-image" ' +
             'src="' + post.thumbnailImageUrl + '" ' +
             'width="90" height="90"/>';
@@ -125,15 +171,10 @@
         }
 
         html += '<div class="media-body">';
-        html += '<a class="link-unstyled" href="' + (post.link || post.permalink) + '">';
-        html += '<h3 class="media-heading">' + post.title + '</h3>';
+        html += '<a class="link-unstyled" href="' + postUrl + '">';
+        html += '<h2 class="media-heading">' + (post.title || '') + '</h2>';
         html += '</a>';
-        html += '<span class="media-meta">';
-        html += '<span class="media-date text-small">';
-        html += moment(post.date).locale(lang).format('ll');
-        html += '</span>';
-        html += '</span>';
-        html += '<div class="media-content hide-xs font-body">' + (post.excerpt || post.excerptStrip) + '</div>';
+        html += '<div class="media-content hide-xs font-body">' + paragraphSnippet + '</div>';
         html += '</div>';
         html += '<div style="clear:both;"></div>';
         html += '<hr>';
@@ -199,14 +240,20 @@
         $(this).remove();
         $('body').css('overflow', 'auto');
       });
+    },
+
+    debounce: function(func, wait) {
+      var timeoutId;
+
+      return function() {
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(func, wait);
+      };
     }
   };
 
   $(document).ready(function() {
-    // launch feature only if there is an Algolia index available
-    if (typeof algoliaIndex !== 'undefined') {
-      var searchModal = new SearchModal();
-      searchModal.run();
-    }
+    var searchModal = new SearchModal();
+    searchModal.run();
   });
 })(jQuery);

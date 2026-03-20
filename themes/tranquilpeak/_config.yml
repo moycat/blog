@@ -42,8 +42,8 @@ sidebar:
             title: global.search
             url: "#search"
             icon: fa fa-search
-            # `open-algolia-search` classes are used to open algolia search modal
-            class: open-algolia-search
+            # `open-search-modal` classes are used to open the search modal
+            class: open-search-modal
         friends:
             title: global.friends
             url: /friends
@@ -85,10 +85,10 @@ sidebar:
 # You can add a link (as an icon) at the right of the header instead of the author's gravatar image or author's picture.
 # By default, author's gravatar or author's picture is displayed if `icon` is empty
 # DON'T edit `header`, `right_link`, `url`, `icon` and `class` variable name
-# E.g to display a shortcut to open algolia search window :
+# E.g to display a shortcut to open search window :
 #     url: /#search
 #     icon: "fa fa-search"
-#     class: open-algolia-search
+#     class: open-search-modal
 header:
     right_link:
         url: /#about

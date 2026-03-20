@@ -51,13 +51,11 @@
   "dependencies": {
     "@fancyapps/fancybox": "3.5.7",
     "@fortawesome/fontawesome-free": "5.15.4",
-    "algoliasearch": "4.10.3",
     "gitalk": "1.7.2",
     "gitment": "0.0.3",
     "hexo-util": "2.5.0",
     "jquery": "3.6.0",
-    "jsdom": "16.7.0",
-    "moment": "2.29.1"
+    "jsdom": "16.7.0"
   },
   "engines": {
     "node": ">=10"
