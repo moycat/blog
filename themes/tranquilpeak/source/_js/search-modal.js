@@ -137,8 +137,8 @@
     showResults: function(posts) {
       var html = '';
       posts.forEach(function(post) {
-        var postUrl = post.url || post.link || post.permalink || '#';
-        var snippet = post.snippet || post.excerpt || post.excerptStrip || '';
+        var postUrl = post.url || '#';
+        var snippet = post.snippet || '';
         var escapedSnippet = String(snippet)
           .replace(/&/g, '&amp;')
           .replace(/</g, '&lt;')
@@ -146,7 +146,11 @@
           .replace(/\"/g, '&quot;')
           .replace(/'/g, '&#39;')
           .replace(/\r\n?|\n/g, '\n');
-        var paragraphSnippet = escapedSnippet
+        var highlightedSnippet = escapedSnippet;
+        post.matched_terms.forEach(function(term) {
+          highlightedSnippet = highlightedSnippet.replace(term, '<b>'+term+'</b>');
+        })
+        var paragraphSnippet = highlightedSnippet
           .split('\n')
           .map(function(line) {
             return line.trim();
