@@ -14,7 +14,7 @@
     this.$results = this.$searchModal.find('.results');
     this.$noResults = this.$searchModal.find('.no-result');
     this.$resultsCount = this.$searchModal.find('.results-count');
-    this.apiBaseUrl = (window.searchApiBaseUrl || 'https://index.moy.cat').replace(/\/$/, '');
+    this.apiBaseUrl = (window.searchApiBaseUrl || 'https://blog.moy.cat/api').replace(/\/$/, '');
   };
 
   SearchModal.prototype = {
@@ -109,7 +109,7 @@
         return;
       }
 
-      fetch(this.apiBaseUrl + '/v1/search?q=' + encodeURIComponent(query))
+      fetch(this.apiBaseUrl + '/search?q=' + encodeURIComponent(query))
         .then(function(response) {
           return response.json().then(function(payload) {
             if (!response.ok) {
