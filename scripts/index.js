@@ -2,7 +2,7 @@
 
 const https = require('https');
 
-const DEFAULT_API_BASE = 'https://index.moy.cat';
+const DEFAULT_API_BASE = 'https://blog.moy.cat/api';
 
 function decodeHtmlEntities(input) {
   const named = {
@@ -121,7 +121,7 @@ hexo.extend.console.register('index', 'Upload all posts to index service', funct
 
     const payload = JSON.stringify({ posts: posts });
 
-    return requestJson(apiBase + '/v1/index', 'POST', {
+    return requestJson(apiBase + '/index', 'POST', {
       'Content-Type': 'application/json',
       'Content-Length': Buffer.byteLength(payload),
       'Authorization': 'Bearer ' + token
@@ -134,5 +134,4 @@ hexo.extend.console.register('index', 'Upload all posts to index service', funct
       });
   });
 });
-
 
