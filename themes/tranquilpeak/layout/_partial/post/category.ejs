@@ -2,6 +2,6 @@
     <%- list_categories(categories, {
         show_count: 0,
         style: 'none',
-        separator: '、'
+        separator: config.language === 'ca' ? ', ' : '、'
     }) %>
 <% } %>

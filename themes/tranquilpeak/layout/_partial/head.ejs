@@ -130,6 +130,12 @@ var feeds = [];
 })()
 %>
 <head>
+    <% if (config.language === 'ca') { %><meta name="robots" content="noindex"><% } %>
+    <% if (bilingual_page()) { %>
+    <link rel="alternate" hreflang="zh-Hans" href="https://blog.moy.cat<%= language_url('zh-Hans') %>">
+    <link rel="alternate" hreflang="ca" href="https://blog.moy.cat<%= language_url('ca') %>">
+    <link rel="alternate" hreflang="x-default" href="https://blog.moy.cat<%= language_url('zh-Hans') %>">
+    <% } %>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="<%= config.title %>">

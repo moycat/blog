@@ -2,6 +2,8 @@
 date_format: "YYYY-MM-DD"
 
 global:
+    sort_date: "按时间排序"
+    sort_category: "按分类排序"
     home: "首页"
     categories: "分类"
     category: "分类"

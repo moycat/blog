@@ -1,0 +1,7 @@
+<% if (bilingual_page()) { %>
+<nav class="language-switch<%= is_post() && page.actions !== false ? ' language-switch--post' : '' %>" aria-label="<%= config.language === 'ca' ? 'Idioma' : '语言' %>">
+    <svg class="language-switch-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M5 6.5h14M5 17.5h14"/></svg>
+    <a href="<%= language_url('zh-Hans') %>" lang="zh-Hans" hreflang="zh-Hans"<% if (config.language !== 'ca') { %> aria-current="page"<% } %>>中文</a>
+    <a href="<%= language_url('ca') %>" lang="ca" hreflang="ca"<% if (config.language === 'ca') { %> aria-current="page"<% } %>>Català</a>
+</nav>
+<% } %>

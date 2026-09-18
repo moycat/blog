@@ -24,6 +24,8 @@
      */
     run: function() {
       var self = this;
+      if (!self.$searchModal.length) return;
+      if (window.location.hash === '#search') self.open();
 
       // open modal when open button is clicked
       self.$openButton.click(function() {

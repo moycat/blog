@@ -104,7 +104,9 @@ hexo.extend.console.register('index', 'Upload all posts to index service', funct
 
   return this.load().then(() => {
     const postsCollection = this.locals.get('posts');
-    const posts = postsCollection.toArray().map((post) => {
+    const posts = postsCollection.toArray().filter((post) => {
+      return post.lang !== 'ca' && !/-ca\.md$/i.test(post.source || '') && !/^ca\//.test(post.path || '');
+    }).map((post) => {
       return {
         title: post.title || '',
         url: post.permalink,
@@ -134,4 +136,3 @@ hexo.extend.console.register('index', 'Upload all posts to index service', funct
       });
   });
 });
-

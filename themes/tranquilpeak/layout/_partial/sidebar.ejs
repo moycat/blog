@@ -32,9 +32,10 @@
                     <%
                         var link = Object.assign({}, theme.sidebar[menuName][linkName])
                         link.class = link.class || ''
+                        if (config.language === 'ca' && link.url === '#search') link.class = ''
                         // TODO: do not re-write URLs starting with `/#` in the next major version.
                         link.url = link.url.startsWith("/#") ? link.url.substr(1) : link.url
-                        link.url = url_for(link.url)
+                        link.url = navigation_url(link.url)
                     %>
                         <a
                             class="sidebar-button-link <%= link.class %>"

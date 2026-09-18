@@ -31,6 +31,9 @@
         <div class="main-content-wrap">
             <%- postContent %>
             <%- partial('post/gallery') %>
+            <% if (is_post() && config.language === 'ca') { %>
+                <p class="translation-notice"><em>Aquest article ha estat traduït del xinès mitjançant intel·ligència artificial. Pel que fa al significat, preval la <a href="<%= language_url('zh-Hans') %>" lang="zh-Hans">versió original en xinès</a>.</em></p>
+            <% } %>
         </div>
     </div>
     <div id="post-footer" class="post-footer main-content-wrap">

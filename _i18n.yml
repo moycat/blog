@@ -1,0 +1,29 @@
+# Source category/tag names are stable IDs in BOTH xxx.md and xxx-ca.md.
+# Catalan labels and URL slugs are defined here; nested category arrays remain nested.
+categories:
+  莫名集:
+    ca: Recull sense nom
+    slug: sense-nom
+  且未集:
+    ca: Recull de l’encara no
+    slug: encara-no
+tags: {}
+ca:
+  site:
+    title: Escrits de Moycat
+    subtitle: 'La vida és estranya. Jo també.'
+    description: El blog de Moycat
+    keywords: [Moycat, blog, reflexions]
+  pages:
+    all-archives: Arxiu
+    all-categories: Categories
+    all-tags: Etiquetes
+    friends: Amics
+  author:
+    bio: |
+      <p>Soc Moycat 👋<br>
+      Crec en l’existencialisme i l’agnosticisme<br>
+      Recorro a tota velocitat una terra vasta i superficial</p>
+      <p>☀ · 🌈 · 🐱 · 🐳 · 🍥</p>
+    location: Bellevue, WA
+    job: ByteDance

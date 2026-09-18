@@ -53,3 +53,7 @@ Disallow: /
 
 User-agent: Bytespider
 Disallow: /
+
+User-agent: *
+Disallow: /ca/
+Disallow: /ca$
