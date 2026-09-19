@@ -17,11 +17,11 @@ Des de petit tinc una peculiaritat: de vegades les històries que sento generen 
 
 Poc després dels meus primers records es va anar estenent l’aire condicionat, i l’escola va quedar abandonada. És clar que jo no vaig veure mai aquell escampall de «cadàvers». El que sí que recordo és estar-me dret al balcó, davant de les restes de l’edifici escolar. De dia hi veia la parra verge, verda i lluminosa, sobre els murs esberlats. Devorava les parets sense fre i s’obria alhora que les germanes enfilades pels blocs veïns. De nit, en canvi, només podia veure llums llunyans i uns quants estels febles damunt del cap.
 
-Al recinte d’habitatges del personal de l’escola hi havia molts nens, fins i tot després que tanqués l’escola. De tant en tant hi jugava, però no acabàvem d’encaixar. Pujàvem per les ruïnes i ells sempre arribaven fins a dalt, allà on a la paret hi deia «Perill elèctric» amb una calavera. Jo no m’hi atrevia, tot i que ara penso que difícilment hi devia quedar electricitat. Tenien pistoles de joguina, baldufes de plàstic, imants, cartes. Jo no tenia aquelles joguines i em feia vergonya demanar als avis que me les compressin. Es visitaven sovint a casa, però als meus avis no els agradava i la tutora de primària s’hi oposava amb totes les forces. No ho entenia, però vaig obeir.
+Al recinte d’habitatges del personal de l’escola hi havia molts nens, fins i tot després que tanqués l’escola. De tant en tant hi jugava, però no acabàvem d’encaixar. Pujàvem per les ruïnes i ells sempre arribaven fins a dalt, allà on a la paret hi deia «Perill elèctric» amb una calavera. Jo no m’hi atrevia, tot i que ara penso que difícilment hi devia quedar electricitat. Tenien pistoles de joguina, baldufes de plàstic, imants, cartes. Jo no tenia aquelles joguines i em feia vergonya demanar als avis que me les compressin. Es visitaven sovint a casa, però als meus avis no els agradava i qui portava la classe a primària s’hi oposava amb totes les forces. No ho entenia, però vaig obeir.
 
 > **Aula — Interior**
 >
-> **Tutora:** Ho sabeu? (Pausa, expressió severa.) X i X, de la nostra classe, s’han anat a visitar a casa! Ho torno a repetir: no permeto que cap de vosaltres vagi a casa d’un altre!
+> **Responsable de la classe:** Ho sabeu? (Pausa, expressió severa.) X i X, de la nostra classe, s’han anat a visitar a casa! Ho torno a repetir: no permeto que cap de vosaltres vagi a casa d’un altre!
 >
 > (Els alumnes abaixen el cap en silenci.)
 

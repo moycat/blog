@@ -118,5 +118,11 @@ for original in PUBLIC.glob('**/index.html'):
 zh_friends = Document(PUBLIC / 'friends/index.html').source
 ca_friends = Document(PUBLIC / 'ca/friends/index.html').source
 assert 'Viatger, on aniràs?' in ca_friends
-assert zh_friends.split('<div id="friends">')[1].split('</h1>', 1)[1].split('</div>\n</div>')[0].replace('/assets/', '/ca/assets/') == ca_friends.split('<div id="friends">')[1].split('</h1>', 1)[1].split('</div>\n</div>')[0]
+assert 'Els trobem a faltar<span class="secondary"> (els seus webs)</span>' in ca_friends
+def friend_entries(document):
+    content = document.split('<div id="friends">', 1)[1].split('</div>\n</div>', 1)[0]
+    return re.sub(r'<h1\b[^>]*>.*?</h1>', '', content, flags=re.S).replace('/ca/assets/', '/assets/')
+assert friend_entries(zh_friends) == friend_entries(ca_friends)
+assert '<title>Reflexions de Moycat</title>' in (PUBLIC / 'ca/index.html').read_text()
+assert 'Reflexions d’una ombra' not in ''.join(file.read_text() for file in (PUBLIC / 'ca').rglob('*.html'))
 print(f'Validated {len(pages)} HTML pages, {source_count} paired articles, reciprocal routes, language isolation, images, feeds, noindex, search and shared 404.')

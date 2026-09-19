@@ -27,7 +27,7 @@ Al capdavall, cada ànima viu empresonada en una closca diminuta: per dins, imme
 
 Una cosa còmica: a secundària ni tan sols m’atrevia a demanar menjar al KFC; en canvi, a classe era dels més «populars». No sé per què, dins del meu grup no tenia gaire por. Feia comentaris durant les classes, organitzava colletes després, m’empescava de tot: crear diversos grups i una web per a la classe, muntar servidors de jocs, posar els companys dins d’un RPG, organitzar protestes contra professors, entrar al sistema de videovigilància per saber quan el tutor havia mirat les càmeres.
 
-D’altra banda, també em comportava com un autèntic desgraciat. No contestava mai les targetes que rebia per festes o aniversaris. Ni tan sols vaig acabar d’omplir la meitat dels àlbums de records que em van passar en acabar els estudis. En l’àmbit afectiu sembla que sempre he rebut passivament el que els altres em donaven, mentre jo era tan fred.
+D’altra banda, també em comportava com un autèntic desgraciat. No contestava mai les targetes que rebia per festes o aniversaris. Fins i tot dels àlbums de records que em van passar en acabar els estudis, en vaig deixar la meitat sense acabar d’omplir. En l’àmbit afectiu sembla que sempre he rebut passivament el que els altres em donaven, mentre jo era tan fred.
 
 Crec que allò no era una amistat entre iguals, sinó una mena d’admiració primària. Quan desapareix aquell sòl, és natural que no quedi gaire afecte per endur-se.
 
@@ -51,4 +51,4 @@ Penso en la pel·lícula taiwanesa *The Great Buddha+*, de fa uns anys. Cap al f
 
 Sí: cadascú viu en una dimensió diferent. Fins i tot cara a cara podem estar a anys llum. Potser aquest és el destí humà: sigui quina sigui la nostra fe, el món només es projecta subjectivament dins del crani, i l’ànima només percep miratges. Ciutats emmurallades separades per boires, comunicant-se a penes amb senyals de bandera confusos.
 
-Quan encara em detestava, a estones envejava els qui podien prendre aquests miratges per reals, estimar-les i creure-hi; a estones em semblava només una malaltia infantil. Vaig trigar molt a trobar l’equilibri, acceptar els meus trets i viure en pau amb el caràcter incognoscible de l’exterior. Potser és justament això el que fa interessant el món. Si fóssim com els trisolaris i tots els pensaments fossin transparents, em temo que la Terra tornaria a ser força avorrida.
+Quan encara em detestava, a estones envejava els qui podien prendre aquests miratges per reals, estimar-los i creure-hi; a estones em semblava només una malaltia infantil. Vaig trigar molt a trobar l’equilibri, acceptar els meus trets i viure en pau amb el caràcter incognoscible de l’exterior. Potser és justament això el que fa interessant el món. Si fóssim com els trisolaris i tots els pensaments fossin transparents, em temo que la Terra tornaria a ser força avorrida.

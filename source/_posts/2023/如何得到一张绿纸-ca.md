@@ -64,7 +64,7 @@ No és que no hagués previst en absolut una denegació, però caure per la PP10
 
 Vam analitzar molt i no vam trobar una causa certa. L’únic consens era que aquell funcionari estava ben sonat. Quines bromes fa el destí: si hagués triat una hora més aviat, o m’hagués estalviat una de les tres sortides, probablement m’hauria tocat algú altre. Un altre recordatori de com n’és d’interessant, la fortuna.
 
-A casa, preguntant i buscant, vaig descobrir que no era cap cas aïllat. L’any anterior més de deu persones com a mínim de la UESTC havien rebut una denegació PP10043. I després de la denegació encara et podien rescatar: tot i que el funcionari té l’última paraula sobre el cas, un supervisor pot revisar i revocar la decisió. La probabilitat, però, era d’aproximadament la meitat, i el termini incert: una setmana si anava ràpid, mesos si no.
+A casa, preguntant i buscant, vaig descobrir que no era cap cas aïllat. L’any anterior més de deu persones com a mínim de la UESTC havien rebut una denegació PP10043. I després de la denegació encara et podien rescatar: tot i que el funcionari té l’última paraula sobre el cas, un supervisor pot revisar i revocar la decisió. La probabilitat, però, era de només la meitat, i el termini incert: una setmana si anava ràpid, mesos si no.
 
 Vaig començar a esperar el rescat i, alhora, vaig buscar a Taobao algú que esbrinés el motiu real. Deien que podien obtenir mitjançant un advocat les anotacions del funcionari. Curiosament, una setmana després em van dir que no trobaven cap resultat i que demanés el reemborsament. Tampoc no havia rebut la trucada de revisió. Vaig perdre la paciència i vaig decidir tornar a presentar-m’hi com més aviat millor.
 

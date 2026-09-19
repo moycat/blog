@@ -5,7 +5,6 @@
     z-index: 15;
     display: flex;
     align-items: center;
-    gap: 4px;
     padding: 2px;
     border: 1px solid rgba(255,255,255,.65);
     border-radius: 999px;
@@ -15,7 +14,63 @@
     backdrop-filter: blur(16px);
     font-family: system-ui, sans-serif;
     &--post { bottom: unquote("max(75px, calc(env(safe-area-inset-bottom) + 55px))"); }
-    &-icon { width: 16px; height: 16px; margin: 0 6px 0 8px; color: #0c4177; }
+    &-trigger {
+        -webkit-appearance: none;
+        appearance: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: none;
+        width: 30px;
+        height: 28px;
+        padding: 0;
+        border: 0;
+        border-radius: 999px;
+        background: transparent;
+        color: #0c4177;
+        cursor: pointer;
+        &:focus-visible { outline: 2px solid #c44132; outline-offset: 2px; }
+    }
+    &-icon { width: 16px; height: 16px; }
+    &-options {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        min-width: 0;
+        max-width: 300px;
+        margin-left: 4px;
+        overflow: hidden;
+        opacity: 1;
+        visibility: visible;
+        transition: max-width .25s ease, margin-left .25s ease, opacity .2s ease, visibility 0s;
+    }
+    &.is-collapsed &-options {
+        max-width: 0;
+        margin-left: 0;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: max-width .25s ease, margin-left .25s ease, opacity .2s ease, visibility 0s .25s;
+    }
+    &.is-collapsed.is-open &-options,
+    &.is-collapsed:focus-within &-options {
+        max-width: 300px;
+        margin-left: 4px;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transition: max-width .25s ease, margin-left .25s ease, opacity .2s ease, visibility 0s;
+    }
+    @media (hover: hover) {
+        &.is-collapsed:hover &-options {
+            max-width: 300px;
+            margin-left: 4px;
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+            transition: max-width .25s ease, margin-left .25s ease, opacity .2s ease, visibility 0s;
+        }
+    }
     a {
         box-sizing: border-box;
         display: flex;
@@ -29,6 +84,8 @@
         line-height: 1.25;
         font-weight: 600;
         text-decoration: none;
+        white-space: nowrap;
+        flex: none;
         &:hover { background: #e4ecf3; }
         &[aria-current="page"] { background: #0c4177; color: #fff; }
         &:focus-visible { outline: 2px solid #c44132; outline-offset: 2px; }
