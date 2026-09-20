@@ -1,5 +1,5 @@
 ---
-title: ㊗ Que demà faci bon dia
+title: ㊗️ Que demà faci bon dia
 date: 2022-11-16 03:00:00
 comments: false
 categories:
